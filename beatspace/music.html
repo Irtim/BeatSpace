@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Музыкальный плеер</title>
+  <style>
+    #playerContainer {
+      display: none;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="playButton">Играть музыку</button>
+
+  <div id="playerContainer">
+    <audio id="audioPlayer" controls>
+      <source src="Gruv 165bpm Bmin @Memories21.mp3" type="audio/mpeg">
+      Ваш браузер не поддерживает аудио.
+    </audio>
+  </div>
+
+  <script>
+    const playButton = document.getElementById("playButton");
+    const playerContainer = document.getElementById("playerContainer");
+    const audioPlayer = document.getElementById("audioPlayer");
+
+    playButton.addEventListener("click", () => {
+      playerContainer.style.display = "block";
+      audioPlayer.play();
+    });
+  </script>
+
+</body>
+</html>

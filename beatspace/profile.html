@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль | BeatSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BeatSpace</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="beats.html">Биты</a></li>
+                    <li><a href="profile.html" class="active">Профиль</a></li>
+                    <li><a href="upload.html">Загрузить</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="logout-btn">Выйти</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-page">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="assets/default-avatar.jpg" alt="Аватар">
+                        <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Memories21</h2>
+                        <p class="username">@Memories21cult</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="number">42</span>
+                                <span class="label">Бита</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">128</span>
+                                <span class="label">Продажи</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">5.0</span>
+                                <span class="label">Рейтинг</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="my-beats">Мои биты</button>
+                    <button class="tab-btn" data-tab="sales">Продажи</button>
+                    <button class="tab-btn" data-tab="settings">Настройки</button>
+                </div>
+
+                <div class="tab-content active" id="my-beats">
+                    <div class="beats-grid">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="sales">
+                    <table class="sales-table">
+                        <thead>
+                            <tr>
+                                <th>Бит</th>
+                                <th>Покупатель</th>
+                                <th>Дата</th>
+                                <th>Цена</th>
+                                <th>Лицензия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dark Trap Beat</td>
+                                <td>@raper123</td>
+                                <td>12.05.2023</td>
+                                <td>$29.99</td>
+                                <td>Basic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tab-content" id="settings">
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="display-name">Имя</label>
+                            <input type="text" id="display-name" value="Memories21">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Имя пользователя</label>
+                            <input type="text" id="username" value="@Memories21cult">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="Memoriestype@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">О себе</label>
+                            <textarea id="bio">Профессиональный продюсер из Нск. Специализация: трэп, дрилл, хип-хоп.</textarea>
+                        </div>
+                        <button type="submit" class="save-btn">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h2>BeatSpace</h2>
+                <p>© 2023 Все права защищены</p>
+            </div>
+            <div class="footer-links">
+                <h4>Ссылки</h4>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Соцсети</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
